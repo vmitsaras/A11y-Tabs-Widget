@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <title>Direct Tab Keyboard Shortcuts | A11y Tabs</title>
+    <!-- seo:start -->
+    <meta name="description" content="Map optional direct shortcuts to tabs, preserve the standard keyboard pattern, and prevent document-level commands from interrupting text entry." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-shortcuts/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Direct Tab Keyboard Shortcuts | A11y Tabs" />
+    <meta property="og:description" content="Map optional direct shortcuts to tabs, preserve the standard keyboard pattern, and prevent document-level commands from interrupting text entry." />
+    <meta property="og:url" content="https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-shortcuts/" />
+    <meta property="og:image" content="https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="640" />
+    <meta property="og:image:alt" content="A11y Tabs: accessible tabs for semantic, progressively enhanced interfaces, shown with a manual activation tab example." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Direct Tab Keyboard Shortcuts | A11y Tabs" />
+    <meta name="twitter:description" content="Map optional direct shortcuts to tabs, preserve the standard keyboard pattern, and prevent document-level commands from interrupting text entry." />
+    <meta name="twitter:image" content="https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png" />
+    <meta name="twitter:image:alt" content="A11y Tabs: accessible tabs for semantic, progressively enhanced interfaces, shown with a manual activation tab example." />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-shortcuts/#webpage",
+            "url": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-shortcuts/",
+            "name": "Direct Tab Keyboard Shortcuts | A11y Tabs",
+            "description": "Map optional direct shortcuts to tabs, preserve the standard keyboard pattern, and prevent document-level commands from interrupting text entry.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/#webpage"
+            },
+            "about": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-shortcuts/#software"
+            },
+            "mainEntity": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-shortcuts/#software"
+            },
+            "author": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-shortcuts/#author"
+            },
+            "image": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png#image"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png#image"
+            }
+          },
+          {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-shortcuts/#software",
+            "name": "a11y-tabs-widget",
+            "alternateName": "A11y Tabs",
+            "description": "Accessible tabs behavior for semantic, progressively enhanced tab interfaces.",
+            "codeRepository": "https://github.com/vmitsaras/a11y-tabs-widget",
+            "programmingLanguage": [
+              "TypeScript",
+              "JavaScript"
+            ],
+            "runtimePlatform": "Browser",
+            "version": "1.0.0",
+            "license": "MIT",
+            "keywords": [
+              "accessibility",
+              "a11y",
+              "tabs",
+              "aria",
+              "typescript"
+            ],
+            "featureList": [
+              "Explicit direct shortcut mappings",
+              "Document-scoped keyboard handling",
+              "Editable control protection",
+              "Standard tabs keyboard fallback"
+            ],
+            "author": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-shortcuts/#author"
+            },
+            "creator": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-shortcuts/#author"
+            },
+            "image": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png#image"
+            },
+            "targetProduct": {
+              "@type": "SoftwareApplication",
+              "name": "Modern web browsers",
+              "applicationCategory": "DeveloperApplication",
+              "operatingSystem": "Any",
+              "runtimePlatform": "Browser"
+            },
+            "sameAs": [
+              "https://github.com/vmitsaras/a11y-tabs-widget"
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-shortcuts/#author",
+            "name": "Vasileios Mitsaras",
+            "url": "https://github.com/vmitsaras/",
+            "sameAs": [
+              "https://github.com/vmitsaras/",
+              "https://linkedin.com/in/vasilis-mitsaras"
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png#image",
+            "url": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png",
+            "contentUrl": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png",
+            "caption": "A11y Tabs: accessible tabs for semantic, progressively enhanced interfaces, shown with a manual activation tab example.",
+            "width": 1280,
+            "height": 640,
+            "encodingFormat": "image/png"
+          }
+        ]
+      }
+    </script>
+    <!-- seo:end -->
+<link rel="stylesheet" href="../../dist/styles.css" />
+    <link rel="stylesheet" href="../addon-demo.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to example</a>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="site-brand" href="../../index.html"><span>A11y/</span> Tabs</a>
+        <div class="site-nav__links">
+          <a href="../../index.html">Overview</a>
+          <a href="../basic/index.html">Basic</a>
+          <a href="../../index.html#examples" aria-current="page">Add-ons</a>
+          <a href="https://github.com/vmitsaras/a11y-tabs-widget">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+    <main id="main" class="demo-page">
+      <header class="demo-hero">
+        <p class="demo-hero__eyebrow">Keyboard Lab</p>
+        <h1>Direct Jump Shortcuts</h1>
+        <p>
+          A power-user workspace adds optional shortcuts for direct tab
+          activation while preserving the normal tabs keyboard pattern.
+        </p>
+      </header>
+
+      <section class="demo-brief" aria-labelledby="scenario-title">
+        <h2 id="scenario-title">Scenario</h2>
+        <p>
+          Support agents need to jump quickly between inbox, queue, notes, and
+          audit panels without removing Arrow key navigation.
+        </p>
+      </section>
+
+      <section class="demo-instructions" aria-labelledby="try-title">
+        <h2 id="try-title">Try it</h2>
+        <ul>
+          <li>Tab to the active <strong>Inbox</strong> tab, then press <kbd>Ctrl</kbd>+<kbd>1</kbd>, <kbd>Ctrl</kbd>+<kbd>2</kbd>, <kbd>Ctrl</kbd>+<kbd>3</kbd>, or <kbd>Ctrl</kbd>+<kbd>4</kbd>.</li>
+          <li>The demo uses <kbd>Ctrl</kbd> instead of <kbd>Option</kbd> so macOS keyboard layouts do not turn number keys into symbols.</li>
+          <li>Use Arrow keys in the tablist to confirm the core behavior remains.</li>
+          <li>Tab into the notes field and confirm shortcuts are ignored while editing.</li>
+        </ul>
+      </section>
+
+      <section class="demo-stage" aria-labelledby="example-title">
+        <h2 id="example-title">Example</h2>
+        <div class="demo-meta" aria-label="Shortcut reference">
+          <span class="demo-pill">Ctrl+1 Inbox</span>
+          <span class="demo-pill">Ctrl+2 Queue</span>
+          <span class="demo-pill">Ctrl+3 Notes</span>
+          <span class="demo-pill">Ctrl+4 Audit</span>
+        </div>
+
+        <div class="a11y-tabs" data-a11y-tabs>
+          <div class="a11y-tabs__list" data-a11y-tabs-list aria-label="Agent workspace">
+            <button class="a11y-tabs__tab" type="button" data-a11y-tabs-tab data-a11y-tabs-panel-id="shortcuts-inbox" data-a11y-tabs-shortcut="Ctrl+1">Inbox</button>
+            <button class="a11y-tabs__tab" type="button" data-a11y-tabs-tab data-a11y-tabs-panel-id="shortcuts-queue" data-a11y-tabs-shortcut="Ctrl+2">Queue</button>
+            <button class="a11y-tabs__tab" type="button" data-a11y-tabs-tab data-a11y-tabs-panel-id="shortcuts-notes" data-a11y-tabs-shortcut="Ctrl+3">Notes</button>
+            <button class="a11y-tabs__tab" type="button" data-a11y-tabs-tab data-a11y-tabs-panel-id="shortcuts-audit" data-a11y-tabs-shortcut="Ctrl+4">Audit</button>
+          </div>
+
+          <section class="a11y-tabs__panel" id="shortcuts-inbox" data-a11y-tabs-panel><h3>Inbox</h3><p>Three customer replies need triage.</p></section>
+          <section class="a11y-tabs__panel" id="shortcuts-queue" data-a11y-tabs-panel hidden><h3>Queue</h3><p>Two escalations are waiting for assignment.</p></section>
+          <section class="a11y-tabs__panel" id="shortcuts-notes" data-a11y-tabs-panel hidden>
+            <h3>Notes</h3>
+            <label class="demo-form">
+              Agent notes
+              <textarea rows="4">Shortcuts are ignored while this field has focus.</textarea>
+            </label>
+          </section>
+          <section class="a11y-tabs__panel" id="shortcuts-audit" data-a11y-tabs-panel hidden><h3>Audit</h3><p>Recent actions are ready for quality review.</p></section>
+        </div>
+        <p class="demo-status" id="shortcuts-status" role="status" aria-live="polite">Shortcuts initialized.</p>
+      </section>
+
+      <section class="demo-notes" aria-labelledby="a11y-title">
+        <h2 id="a11y-title">Accessibility notes</h2>
+        <ul>
+          <li>Shortcuts are optional and documented on screen.</li>
+          <li>The demo keeps standard tablist Arrow, Home, End, Enter, and Space behavior.</li>
+          <li>Editable controls are ignored so text entry is not interrupted.</li>
+          <li>Shortcuts stop when focus leaves the tabs widget; document-wide shortcuts require an explicit opt-in.</li>
+          <li>A successful shortcut moves focus to the activated tab so focus is not left in a panel that becomes hidden.</li>
+          <li>Browser, operating system, and assistive technology commands can still reserve key combinations.</li>
+        </ul>
+      </section>
+
+      <section class="demo-dev" aria-labelledby="dev-title">
+        <h2 id="dev-title">Developer notes</h2>
+        <ul>
+          <li>Imports: <code>A11yTabsShortcuts</code> from the built add-on module.</li>
+          <li>Options used: explicit shortcut mappings, the default <code>scope: "root"</code>, and <code>ignoreEditable: true</code>.</li>
+          <li>Shortcut targets can be indexes, tab ids, panel ids, or callbacks.</li>
+          <li>This demo uses <code>Ctrl</code>-number shortcuts because macOS <code>Option</code>-number combinations can report symbols instead of digit keys.</li>
+          <li>Per-tab shortcut attributes are not read automatically; map them into the <code>shortcuts</code> option when you want shortcut labels next to tab markup.</li>
+          <li>Open DevTools to inspect <code>[a11y-tabs-shortcuts debug]</code> logs for each keydown event.</li>
+          <li>Use global scope only when the application intentionally owns those shortcuts.</li>
+          <li>Disabled, hidden, disconnected, missing, or panel-less targets are not activated and emit <code>a11y-tabs:shortcut-unavailable</code>.</li>
+        </ul>
+        <pre><code>const shortcuts = Array.from(
+  root.querySelectorAll("[data-a11y-tabs-tab]")
+)
+  .map((tab, index) => {
+    const combo = tab.getAttribute("data-a11y-tabs-shortcut");
+    return combo ? { combo, target: index } : null;
+  })
+  .filter(Boolean);
+
+new A11yTabsShortcuts(tabs, { shortcuts });</code></pre>
+        <p>
+          Shortcut mappings are an optional acceleration layer. Document every
+          active combination near the widget, avoid browser and assistive-technology
+          conflicts, and retain the complete Arrow, Home, End, Enter, and Space flow.
+        </p>
+      </section>
+
+      <section class="demo-dev demo-code" aria-labelledby="how-it-works-title">
+        <h2 id="how-it-works-title">How it works</h2>
+        <p>Shortcut declarations map key combinations to panel ids. The add-on listens within the tabs root, ignores editable controls, and moves focus to the activated tab after a successful shortcut.</p>
+        <h3>HTML</h3>
+        <pre><code>&lt;div data-a11y-tabs&gt;
+  &lt;div data-a11y-tabs-list aria-label="Editor sections"&gt;
+    &lt;button
+      type="button"
+      data-a11y-tabs-tab
+      data-a11y-tabs-panel-id="preview"
+      data-tab-shortcut="Alt+1"
+    &gt;
+      Preview
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;section id="preview" data-a11y-tabs-panel&gt;...&lt;/section&gt;
+&lt;/div&gt;</code></pre>
+        <h3>JavaScript</h3>
+        <pre><code>import { createTabs } from "../../dist/index.js";
+import { A11yTabsShortcuts } from "../../dist/addons/a11y-tabs-shortcuts.js";
+
+const root = document.querySelector("[data-a11y-tabs]");
+
+if (root instanceof HTMLElement) {
+  const tabs = createTabs(root);
+  new A11yTabsShortcuts(tabs);
+}</code></pre>
+      </section>
+
+    </main>
+    <footer class="demo-footer" data-demo-footer>
+      <div class="demo-footer__inner">
+        <div class="demo-footer__brand">
+          <p class="demo-footer__eyebrow">Accessibility plugin demo</p>
+          <p class="demo-footer__credit">
+            <span class="demo-footer__plugin">A11y Tabs</span>
+            <span class="demo-footer__separator" aria-hidden="true">&middot;</span>
+            Built by
+            <a class="demo-footer__link" href="https://github.com/vmitsaras/">Vasileios Mitsaras</a>
+            <span class="demo-footer__separator" aria-hidden="true">&middot;</span>
+            <a class="demo-footer__link" href="https://linkedin.com/in/vasilis-mitsaras">LinkedIn profile</a>
+          </p>
+          <p class="demo-footer__meta">
+            <span>a11y-tabs-widget</span>
+            <span class="demo-footer__separator" aria-hidden="true">&middot;</span>
+            <span>MIT License</span>
+          </p>
+        </div>
+
+        <nav class="demo-footer__nav" aria-label="Project links">
+          <ul class="demo-footer__links">
+            <li class="demo-footer__item">
+              <a class="demo-footer__link" href="https://github.com/vmitsaras/a11y-tabs-widget">GitHub repository</a>
+            </li>
+            <li class="demo-footer__item">
+              <a class="demo-footer__link" href="https://www.npmjs.com/package/a11y-tabs-widget">npm package</a>
+            </li>
+            <li class="demo-footer__item">
+              <a class="demo-footer__link" href="https://vmitsaras.github.io/a11y-tabs-widget/">Documentation</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module">
+      import { createTabs } from "../../dist/index.js";
+      import { A11yTabsShortcuts } from "../../dist/addons/a11y-tabs-shortcuts.js";
+
+      const root = document.querySelector("[data-a11y-tabs]");
+      const status = document.getElementById("shortcuts-status");
+
+      if (root instanceof HTMLElement) {
+        const tabs = createTabs(root);
+        const shortcuts = Array.from(
+          root.querySelectorAll("[data-a11y-tabs-tab]")
+        )
+          .map((tab, index) => {
+            const combo = tab.getAttribute("data-a11y-tabs-shortcut");
+            return combo ? { combo, target: index } : null;
+          })
+          .filter(Boolean);
+        const configuredShortcuts = shortcuts.map((shortcut) => shortcut.combo);
+        const getElementName = (element) => {
+          if (!(element instanceof Element)) return null;
+
+          return {
+            tag: element.tagName.toLowerCase(),
+            id: element.id || null,
+            role: element.getAttribute("role")
+          };
+        };
+        const logShortcutKeydown = (event) => {
+          const selectedBefore = tabs.getActiveTab()?.textContent?.trim() ?? null;
+          const debug = {
+            key: event.key,
+            code: event.code,
+            altKey: event.altKey,
+            ctrlKey: event.ctrlKey,
+            metaKey: event.metaKey,
+            shiftKey: event.shiftKey,
+            repeat: event.repeat,
+            defaultPreventedBeforeHandlers: event.defaultPrevented,
+            target: getElementName(event.target),
+            activeElement: getElementName(document.activeElement),
+            configuredShortcuts,
+            selectedBefore
+          };
+
+          queueMicrotask(() => {
+            console.log("[a11y-tabs-shortcuts debug] keydown", {
+              ...debug,
+              defaultPreventedAfterHandlers: event.defaultPrevented,
+              selectedAfter: tabs.getActiveTab()?.textContent?.trim() ?? null
+            });
+          });
+        };
+
+        document.addEventListener("keydown", logShortcutKeydown, true);
+
+        new A11yTabsShortcuts(tabs, {
+          scope: "root",
+          ignoreEditable: true,
+          shortcuts
+        });
+
+        root.addEventListener("a11y-tabs:change", (event) => {
+          status.textContent = `Shortcut or tab activation selected ${event.detail.tab?.textContent?.trim() ?? "a tab"}.`;
+        });
+
+        root.addEventListener("a11y-tabs:shortcut-unavailable", (event) => {
+          const label = event.detail.tab?.textContent?.trim() ?? "That tab";
+          status.textContent = `${label} is unavailable.`;
+        });
+
+        root.addEventListener(
+          "a11y-tabs:destroy",
+          () => {
+            document.removeEventListener("keydown", logShortcutKeydown, true);
+          },
+          { once: true }
+        );
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+/* A11yTabs optional compact theme.
+   Load after ../styles.css. */
+
+.a11y-tabs {
+  --a11y-tabs-compact-accent: #1f2937;
+  font-size: 0.875rem;
+}
+
+.a11y-tabs__list {
+  gap: 0;
+  border-block-end-width: 1px;
+}
+
+.a11y-tabs__list[aria-orientation="vertical"] {
+  border-inline-end-width: 1px;
+}
+
+.a11y-tabs__tab {
+  min-height: 2.25rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 0.375rem 0.375rem 0 0;
+  font-size: inherit;
+}
+
+.a11y-tabs__list[aria-orientation="vertical"] .a11y-tabs__tab {
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.a11y-tabs__tab[aria-selected="true"] {
+  background: #f3f4f6;
+  color: var(--a11y-tabs-compact-accent);
+  border-block-end-color: var(--a11y-tabs-compact-accent);
+  box-shadow: none;
+}
+
+.a11y-tabs__list[aria-orientation="vertical"] .a11y-tabs__tab[aria-selected="true"] {
+  border-inline-end-color: var(--a11y-tabs-compact-accent);
+}
+
+.a11y-tabs__panel {
+  padding: 0.75rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: none;
+}

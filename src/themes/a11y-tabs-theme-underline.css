@@ -1,0 +1,52 @@
+/* A11yTabs optional underline theme.
+   Load after ../styles.css. */
+
+.a11y-tabs {
+  --a11y-tabs-underline-accent: #7c3aed;
+  --a11y-tabs-underline-muted: #6b7280;
+  --a11y-tabs-underline-border: #e5e7eb;
+}
+
+.a11y-tabs__list {
+  gap: 1rem;
+  border-block-end: 1px solid var(--a11y-tabs-underline-border);
+}
+
+.a11y-tabs__list[aria-orientation="vertical"] {
+  gap: 0.25rem;
+  border-inline-end: 1px solid var(--a11y-tabs-underline-border);
+}
+
+.a11y-tabs__tab {
+  padding-inline: 0;
+  border-radius: 0;
+  color: var(--a11y-tabs-underline-muted);
+}
+
+.a11y-tabs__list[aria-orientation="vertical"] .a11y-tabs__tab {
+  padding-inline: 0.75rem;
+  border-radius: 0;
+}
+
+.a11y-tabs__tab:not([disabled]):hover {
+  background: transparent;
+  color: #111827;
+}
+
+.a11y-tabs__tab[aria-selected="true"] {
+  background: transparent;
+  color: var(--a11y-tabs-underline-accent);
+  border-block-end-color: currentColor;
+  box-shadow: none;
+}
+
+.a11y-tabs__list[aria-orientation="vertical"] .a11y-tabs__tab[aria-selected="true"] {
+  border-inline-end-color: currentColor;
+}
+
+.a11y-tabs__panel {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  padding-inline: 0;
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <title>A11y Tabs</title>
+  <rect width="32" height="32" rx="7" fill="#111827"/>
+  <path d="M5 8.5A1.5 1.5 0 0 1 6.5 7h7A1.5 1.5 0 0 1 15 8.5V14H5Z" fill="#2455e6"/>
+  <path d="M16 10a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v4h-5Z" fill="#667085"/>
+  <path d="M22 10a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v4h-5Z" fill="#f3c84b"/>
+  <path d="M5 14h22v10.5a2.5 2.5 0 0 1-2.5 2.5h-17A2.5 2.5 0 0 1 5 24.5Z" fill="#f4f5f1"/>
+  <path d="M5 14h10" stroke="#2455e6" stroke-width="2.5"/>
+  <path d="M9 19h14M9 23h9" stroke="#566173" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <title>Responsive FAQ Accordion Adapter | A11y Tabs</title>
+    <!-- seo:start -->
+    <meta name="description" content="Test FAQ tabs that switch to required-open disclosure controls when labels wrap or overflow while preserving selection and focus context." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-accordion/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Responsive FAQ Accordion Adapter | A11y Tabs" />
+    <meta property="og:description" content="Test FAQ tabs that switch to required-open disclosure controls when labels wrap or overflow while preserving selection and focus context." />
+    <meta property="og:url" content="https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-accordion/" />
+    <meta property="og:image" content="https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="640" />
+    <meta property="og:image:alt" content="A11y Tabs: accessible tabs for semantic, progressively enhanced interfaces, shown with a manual activation tab example." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Responsive FAQ Accordion Adapter | A11y Tabs" />
+    <meta name="twitter:description" content="Test FAQ tabs that switch to required-open disclosure controls when labels wrap or overflow while preserving selection and focus context." />
+    <meta name="twitter:image" content="https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png" />
+    <meta name="twitter:image:alt" content="A11y Tabs: accessible tabs for semantic, progressively enhanced interfaces, shown with a manual activation tab example." />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-accordion/#webpage",
+            "url": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-accordion/",
+            "name": "Responsive FAQ Accordion Adapter | A11y Tabs",
+            "description": "Test FAQ tabs that switch to required-open disclosure controls when labels wrap or overflow while preserving selection and focus context.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/#webpage"
+            },
+            "about": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-accordion/#software"
+            },
+            "mainEntity": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-accordion/#software"
+            },
+            "author": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-accordion/#author"
+            },
+            "image": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png#image"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png#image"
+            }
+          },
+          {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-accordion/#software",
+            "name": "a11y-tabs-widget",
+            "alternateName": "A11y Tabs",
+            "description": "Accessible tabs behavior for semantic, progressively enhanced tab interfaces.",
+            "codeRepository": "https://github.com/vmitsaras/a11y-tabs-widget",
+            "programmingLanguage": [
+              "TypeScript",
+              "JavaScript"
+            ],
+            "runtimePlatform": "Browser",
+            "version": "1.0.0",
+            "license": "MIT",
+            "keywords": [
+              "accessibility",
+              "a11y",
+              "tabs",
+              "aria",
+              "typescript"
+            ],
+            "featureList": [
+              "Container-aware presentation changes",
+              "Required-open disclosure controls",
+              "Selection and focus continuity",
+              "Readable no-JavaScript content"
+            ],
+            "author": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-accordion/#author"
+            },
+            "creator": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-accordion/#author"
+            },
+            "image": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png#image"
+            },
+            "targetProduct": {
+              "@type": "SoftwareApplication",
+              "name": "Modern web browsers",
+              "applicationCategory": "DeveloperApplication",
+              "operatingSystem": "Any",
+              "runtimePlatform": "Browser"
+            },
+            "sameAs": [
+              "https://github.com/vmitsaras/a11y-tabs-widget"
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/addon-accordion/#author",
+            "name": "Vasileios Mitsaras",
+            "url": "https://github.com/vmitsaras/",
+            "sameAs": [
+              "https://github.com/vmitsaras/",
+              "https://linkedin.com/in/vasilis-mitsaras"
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png#image",
+            "url": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png",
+            "contentUrl": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png",
+            "caption": "A11y Tabs: accessible tabs for semantic, progressively enhanced interfaces, shown with a manual activation tab example.",
+            "width": 1280,
+            "height": 640,
+            "encodingFormat": "image/png"
+          }
+        ]
+      }
+    </script>
+    <!-- seo:end -->
+<link rel="stylesheet" href="../../dist/styles.css" />
+    <link rel="stylesheet" href="../addon-demo.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to example</a>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="site-brand" href="../../index.html"><span>A11y/</span> Tabs</a>
+        <div class="site-nav__links">
+          <a href="../../index.html">Overview</a>
+          <a href="../basic/index.html">Basic</a>
+          <a href="../../index.html#examples" aria-current="page">Add-ons</a>
+          <a href="https://github.com/vmitsaras/a11y-tabs-widget">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+    <main id="main" class="demo-page demo-page--accordion">
+      <header class="demo-hero">
+        <p class="demo-hero__eyebrow">Responsive add-on demo</p>
+        <h1>FAQ tabs that adapt when labels stop fitting</h1>
+        <p>
+          Compare common account questions in desktop tabs or required-open
+          disclosure controls when the tablist wraps or overflows. The same
+          selected answer and focus context are preserved when the presentation
+          changes.
+        </p>
+      </header>
+
+      <section class="demo-brief" aria-labelledby="scenario-title">
+        <h2 id="scenario-title">Scenario</h2>
+        <p>
+          A support page needs compact desktop tabs and readable narrow-screen
+          disclosures without maintaining two copies of the same answers.
+        </p>
+      </section>
+
+      <section class="demo-stage demo-accordion" aria-labelledby="example-title">
+        <div class="demo-stage__intro">
+          <div>
+            <p class="demo-kicker">Working example</p>
+            <h2 id="example-title">Support questions</h2>
+          </div>
+          <p>
+            Choose a topic. One answer stays open because the add-on mirrors a
+            single-selected tabs interface.
+          </p>
+        </div>
+
+        <div
+          class="demo-accordion__width-control"
+          role="group"
+          aria-labelledby="accordion-width-label"
+        >
+          <span class="demo-accordion__width-label" id="accordion-width-label">
+            Example width
+          </span>
+          <div class="demo-accordion__width-buttons">
+            <button
+              class="demo-accordion__width-button"
+              type="button"
+              data-accordion-width="wide"
+              aria-pressed="true"
+            >
+              Available width
+            </button>
+            <button
+              class="demo-accordion__width-button"
+              type="button"
+              data-accordion-width="constrained"
+              aria-pressed="false"
+            >
+              Constrained
+            </button>
+          </div>
+        </div>
+
+        <p
+          class="demo-accordion__state"
+          data-accordion-state
+          data-presentation="tabs"
+        >
+          Current presentation: <strong>Tabs</strong> — all labels fit.
+        </p>
+
+        <div
+          class="demo-accordion__preview"
+          data-accordion-preview
+          data-preview-width="wide"
+        >
+          <div class="a11y-tabs" data-a11y-tabs>
+          <div class="a11y-tabs__list" data-a11y-tabs-list aria-label="Support questions">
+            <button class="a11y-tabs__tab" type="button" data-a11y-tabs-tab data-a11y-tabs-panel-id="accordion-setup">How do I set up my account?</button>
+            <button class="a11y-tabs__tab" type="button" data-a11y-tabs-tab data-a11y-tabs-panel-id="accordion-billing">When will I be charged?</button>
+            <button class="a11y-tabs__tab" type="button" data-a11y-tabs-tab data-a11y-tabs-panel-id="accordion-access">Who can access my workspace?</button>
+            <button class="a11y-tabs__tab" type="button" data-a11y-tabs-tab data-a11y-tabs-panel-id="accordion-trouble">What should I try if sign-in fails?</button>
+          </div>
+
+          <section class="a11y-tabs__panel" id="accordion-setup" data-a11y-tabs-panel>
+            <h3>Set up your account</h3>
+            <p>
+              Confirm your email address, create a strong password, and choose
+              your notification preferences. You can revisit each setting later.
+            </p>
+          </section>
+
+          <section class="a11y-tabs__panel" id="accordion-billing" data-a11y-tabs-panel>
+            <h3>Billing schedule</h3>
+            <p>
+              Your first charge is made when the trial ends. Future charges use
+              the same calendar day, and the invoice is available in Billing.
+            </p>
+          </section>
+
+          <section class="a11y-tabs__panel" id="accordion-access" data-a11y-tabs-panel>
+            <h3>Workspace access</h3>
+            <p>
+              Workspace owners invite members and assign their roles. Guests only
+              see the projects that an owner or administrator shares with them.
+            </p>
+          </section>
+
+          <section class="a11y-tabs__panel" id="accordion-trouble" data-a11y-tabs-panel>
+            <h3>Sign-in troubleshooting</h3>
+            <p>
+              Check the email address, request a fresh sign-in link, and confirm
+              that your browser accepts first-party cookies for this site.
+            </p>
+          </section>
+          </div>
+        </div>
+      </section>
+
+      <div class="demo-support-grid">
+        <section class="demo-instructions" aria-labelledby="try-title">
+          <h2 id="try-title">Try it</h2>
+          <ul>
+            <li>At wider widths, use Arrow keys, <kbd>Home</kbd>, and <kbd>End</kbd> to move between tabs.</li>
+            <li>Press <kbd>Enter</kbd> or <kbd>Space</kbd> to activate a focused tab in manual mode.</li>
+            <li>Choose <strong>Constrained</strong> to make the labels stop fitting, then use <kbd>Tab</kbd> to reach each disclosure.</li>
+            <li>Resize while a control is focused and confirm focus moves to its equivalent control without changing the answer.</li>
+          </ul>
+        </section>
+
+        <section class="demo-notes" aria-labelledby="a11y-title">
+          <h2 id="a11y-title">Accessibility behavior</h2>
+          <ul>
+            <li>All source answers remain readable if JavaScript is unavailable.</li>
+            <li>Generated controls are real buttons with <code>aria-expanded</code> and <code>aria-controls</code>.</li>
+            <li>The required-open control remains focusable and exposes <code>aria-disabled="true"</code>.</li>
+            <li>State is exposed through the controls, so the demo does not add a duplicate live announcement.</li>
+            <li>No animation is required, and visible focus is preserved.</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="demo-dev" aria-labelledby="dev-title">
+        <h2 id="dev-title">Developer setup</h2>
+        <p>
+          Initialize the core tabs first, then pass the instance to the responsive
+          adapter. Repeating the add-on constructor for the same root reuses the
+          existing instance.
+        </p>
+        <pre><code>import { createTabs } from "a11y-tabs-widget";
+import { A11yTabsAccordion } from "a11y-tabs-widget/addons/a11y-tabs-accordion";
+
+const root = document.querySelector("[data-a11y-tabs]");
+
+if (root instanceof HTMLElement) {
+  const tabs = createTabs(root);
+  const accordion = new A11yTabsAccordion(tabs, {
+    // This demo responds only to the tablist's actual layout pressure.
+    mediaQuery: false
+  });
+
+  // Remove only the responsive adapter when needed.
+  // accordion.destroy();
+}</code></pre>
+        <p>
+          By default, wrapping/overflow and <code>(max-width: 40rem)</code> can
+          each trigger the adapter. This demo uses <code>mediaQuery: false</code>
+          to demonstrate container-only behavior. The adapter preserves the
+          tabs single-selection model; it is not a multi-open standalone accordion.
+        </p>
+      </section>
+
+      <section class="demo-dev demo-code" aria-labelledby="how-it-works-title">
+        <h2 id="how-it-works-title">How it works</h2>
+        <p>The source stays a normal tabs component. After the core initializes, the accordion adapter watches available space and creates synchronized disclosure buttons when the tablist no longer fits.</p>
+        <h3>HTML</h3>
+        <pre><code>&lt;div class="a11y-tabs" data-a11y-tabs&gt;
+  &lt;div data-a11y-tabs-list aria-label="Help topics"&gt;
+    &lt;button type="button" data-a11y-tabs-tab data-a11y-tabs-panel-id="account"&gt;
+      Account security
+    &lt;/button&gt;
+    &lt;button type="button" data-a11y-tabs-tab data-a11y-tabs-panel-id="access"&gt;
+      Workspace access
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;section id="account" data-a11y-tabs-panel&gt;...&lt;/section&gt;
+  &lt;section id="access" data-a11y-tabs-panel hidden&gt;...&lt;/section&gt;
+&lt;/div&gt;</code></pre>
+        <h3>JavaScript</h3>
+        <pre><code>import { createTabs } from "../../dist/index.js";
+import { A11yTabsAccordion } from "../../dist/addons/a11y-tabs-accordion.js";
+
+const root = document.querySelector("[data-a11y-tabs]");
+
+if (root instanceof HTMLElement) {
+  const tabs = createTabs(root);
+  new A11yTabsAccordion(tabs, { mediaQuery: false });
+}</code></pre>
+      </section>
+
+    </main>
+    <footer class="demo-footer" data-demo-footer>
+      <div class="demo-footer__inner">
+        <div class="demo-footer__brand">
+          <p class="demo-footer__eyebrow">Accessibility plugin demo</p>
+          <p class="demo-footer__credit">
+            <span class="demo-footer__plugin">A11y Tabs</span>
+            <span class="demo-footer__separator" aria-hidden="true">&middot;</span>
+            Built by
+            <a class="demo-footer__link" href="https://github.com/vmitsaras/">Vasileios Mitsaras</a>
+            <span class="demo-footer__separator" aria-hidden="true">&middot;</span>
+            <a class="demo-footer__link" href="https://linkedin.com/in/vasilis-mitsaras">LinkedIn profile</a>
+          </p>
+          <p class="demo-footer__meta">
+            <span>a11y-tabs-widget</span>
+            <span class="demo-footer__separator" aria-hidden="true">&middot;</span>
+            <span>MIT License</span>
+          </p>
+        </div>
+
+        <nav class="demo-footer__nav" aria-label="Project links">
+          <ul class="demo-footer__links">
+            <li class="demo-footer__item">
+              <a class="demo-footer__link" href="https://github.com/vmitsaras/a11y-tabs-widget">GitHub repository</a>
+            </li>
+            <li class="demo-footer__item">
+              <a class="demo-footer__link" href="https://www.npmjs.com/package/a11y-tabs-widget">npm package</a>
+            </li>
+            <li class="demo-footer__item">
+              <a class="demo-footer__link" href="https://vmitsaras.github.io/a11y-tabs-widget/">Documentation</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module">
+      import { createTabs } from "../../dist/index.js";
+      import { A11yTabsAccordion } from "../../dist/addons/a11y-tabs-accordion.js";
+
+      const root = document.querySelector("[data-a11y-tabs]");
+      const preview = document.querySelector("[data-accordion-preview]");
+      const presentationState = document.querySelector("[data-accordion-state]");
+      const widthButtons = document.querySelectorAll("[data-accordion-width]");
+
+      if (
+        root instanceof HTMLElement &&
+        preview instanceof HTMLElement &&
+        presentationState instanceof HTMLElement
+      ) {
+        const tabs = createTabs(root);
+        const accordion = new A11yTabsAccordion(tabs, { mediaQuery: false });
+
+        const updatePresentationState = () => {
+          accordion.update();
+          const isAccordion = root.dataset.a11yTabsPresentation === "accordion";
+          presentationState.dataset.presentation = isAccordion
+            ? "accordion"
+            : "tabs";
+          presentationState.innerHTML = isAccordion
+            ? "Current presentation: <strong>Disclosures</strong> — the tab labels no longer fit."
+            : "Current presentation: <strong>Tabs</strong> — all labels fit.";
+        };
+
+        const queuePresentationStateUpdate = () => {
+          window.requestAnimationFrame(updatePresentationState);
+        };
+
+        widthButtons.forEach((button) => {
+          if (!(button instanceof HTMLButtonElement)) return;
+
+          button.addEventListener("click", () => {
+            const width = button.dataset.accordionWidth;
+            if (width !== "wide" && width !== "constrained") return;
+
+            preview.dataset.previewWidth = width;
+            widthButtons.forEach((candidate) => {
+              if (candidate instanceof HTMLButtonElement) {
+                candidate.setAttribute(
+                  "aria-pressed",
+                  candidate === button ? "true" : "false"
+                );
+              }
+            });
+            button.focus({ preventScroll: true });
+            queuePresentationStateUpdate();
+          });
+        });
+
+        if (typeof ResizeObserver === "function") {
+          const previewObserver = new ResizeObserver(
+            queuePresentationStateUpdate
+          );
+          previewObserver.observe(preview);
+        } else {
+          window.addEventListener("resize", queuePresentationStateUpdate);
+        }
+
+        queuePresentationStateUpdate();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+/* A11yTabs optional pills theme.
+   Load after ../styles.css. */
+
+.a11y-tabs {
+  --a11y-tabs-pills-accent: #2563eb;
+  --a11y-tabs-pills-accent-soft: #dbeafe;
+  --a11y-tabs-pills-border: #d1d5db;
+  --a11y-tabs-pills-surface: #ffffff;
+  --a11y-tabs-pills-text: #374151;
+}
+
+.a11y-tabs__list {
+  gap: 0.375rem;
+  padding: 0.25rem;
+  border: 1px solid var(--a11y-tabs-pills-border);
+  border-radius: 999px;
+  background: #f9fafb;
+}
+
+.a11y-tabs__list[aria-orientation="vertical"] {
+  border: 1px solid var(--a11y-tabs-pills-border);
+  border-radius: 1rem;
+}
+
+.a11y-tabs__tab,
+.a11y-tabs__list[aria-orientation="vertical"] .a11y-tabs__tab {
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--a11y-tabs-pills-text);
+}
+
+.a11y-tabs__tab:not([disabled]):hover {
+  background: var(--a11y-tabs-pills-surface);
+}
+
+.a11y-tabs__tab[aria-selected="true"],
+.a11y-tabs__list[aria-orientation="vertical"] .a11y-tabs__tab[aria-selected="true"] {
+  border-color: var(--a11y-tabs-pills-accent);
+  background: var(--a11y-tabs-pills-accent-soft);
+  color: #1d4ed8;
+  box-shadow: none;
+}
+
+.a11y-tabs__panel {
+  margin-top: 0.75rem;
+  border-radius: 1rem;
+}

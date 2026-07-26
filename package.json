@@ -1,0 +1,117 @@
+{
+  "name": "a11y-tabs-widget",
+  "version": "1.0.0",
+  "description": "Accessible tabs behavior for semantic, progressively enhanced tab interfaces.",
+  "type": "module",
+  "author": "Vasileios Mitsaras",
+  "license": "MIT",
+  "homepage": "https://vmitsaras.github.io/a11y-tabs-widget/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmitsaras/a11y-tabs-widget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vmitsaras/a11y-tabs-widget/issues"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "tabs",
+    "aria",
+    "typescript"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./docs": {
+      "types": "./dist/docs.d.ts",
+      "import": "./dist/docs.js"
+    },
+    "./addons/a11y-tabs-accordion": {
+      "types": "./dist/addons/a11y-tabs-accordion.d.ts",
+      "import": "./dist/addons/a11y-tabs-accordion.js"
+    },
+    "./addons/a11y-tabs-analytics": {
+      "types": "./dist/addons/a11y-tabs-analytics.d.ts",
+      "import": "./dist/addons/a11y-tabs-analytics.js"
+    },
+    "./addons/a11y-tabs-autoinit": {
+      "types": "./dist/addons/a11y-tabs-autoinit.d.ts",
+      "import": "./dist/addons/a11y-tabs-autoinit.js"
+    },
+    "./addons/a11y-tabs-badges": {
+      "types": "./dist/addons/a11y-tabs-badges.d.ts",
+      "import": "./dist/addons/a11y-tabs-badges.js"
+    },
+    "./addons/a11y-tabs-history": {
+      "types": "./dist/addons/a11y-tabs-history.d.ts",
+      "import": "./dist/addons/a11y-tabs-history.js"
+    },
+    "./addons/a11y-tabs-loader": {
+      "types": "./dist/addons/a11y-tabs-loader.d.ts",
+      "import": "./dist/addons/a11y-tabs-loader.js"
+    },
+    "./addons/a11y-tabs-overflow-menu": {
+      "types": "./dist/addons/a11y-tabs-overflow-menu.d.ts",
+      "import": "./dist/addons/a11y-tabs-overflow-menu.js"
+    },
+    "./addons/a11y-tabs-shortcuts": {
+      "types": "./dist/addons/a11y-tabs-shortcuts.d.ts",
+      "import": "./dist/addons/a11y-tabs-shortcuts.js"
+    },
+    "./addons/a11y-tabs-stepper": {
+      "types": "./dist/addons/a11y-tabs-stepper.d.ts",
+      "import": "./dist/addons/a11y-tabs-stepper.js"
+    },
+    "./addons/a11y-tabs-tour": {
+      "types": "./dist/addons/a11y-tabs-tour.d.ts",
+      "import": "./dist/addons/a11y-tabs-tour.js"
+    },
+    "./addons/a11y-tabs-unsaved-guard": {
+      "types": "./dist/addons/a11y-tabs-unsaved-guard.d.ts",
+      "import": "./dist/addons/a11y-tabs-unsaved-guard.js"
+    },
+    "./addons/a11y-tabs-validation": {
+      "types": "./dist/addons/a11y-tabs-validation.d.ts",
+      "import": "./dist/addons/a11y-tabs-validation.js"
+    },
+    "./styles.css": "./dist/styles.css",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "clean": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\"",
+    "build": "npm run clean && tsdown && npm run copy:assets",
+    "docs:build": "npm run build && node scripts/build-docs.mjs",
+    "metadata:build": "node scripts/generate-html-metadata.mjs",
+    "metadata:check": "node scripts/validate-html-metadata.mjs",
+    "copy:assets": "node -e \"const fs = require('node:fs'); if (fs.existsSync('src/styles.css')) { fs.mkdirSync('dist', { recursive: true }); fs.copyFileSync('src/styles.css', 'dist/styles.css'); }\"",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "pack:check": "npm pack --dry-run",
+    "prepack": "npm run build",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "npm run test && npm run typecheck && npm run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0",
+    "happy-dom": "^20.10.6",
+    "tsdown": "^0.22.4",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.10"
+  }
+}

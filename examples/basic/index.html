@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <title>Basic Accessible Tabs Example | A11y Tabs</title>
+    <!-- seo:start -->
+    <meta name="description" content="Start with semantic buttons and panels, then inspect the ARIA relationships, roving focus, keyboard navigation, and hidden panel state added at runtime." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://vmitsaras.github.io/a11y-tabs-widget/examples/basic/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Basic Accessible Tabs Example | A11y Tabs" />
+    <meta property="og:description" content="Start with semantic buttons and panels, then inspect the ARIA relationships, roving focus, keyboard navigation, and hidden panel state added at runtime." />
+    <meta property="og:url" content="https://vmitsaras.github.io/a11y-tabs-widget/examples/basic/" />
+    <meta property="og:image" content="https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="640" />
+    <meta property="og:image:alt" content="A11y Tabs: accessible tabs for semantic, progressively enhanced interfaces, shown with a manual activation tab example." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Basic Accessible Tabs Example | A11y Tabs" />
+    <meta name="twitter:description" content="Start with semantic buttons and panels, then inspect the ARIA relationships, roving focus, keyboard navigation, and hidden panel state added at runtime." />
+    <meta name="twitter:image" content="https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png" />
+    <meta name="twitter:image:alt" content="A11y Tabs: accessible tabs for semantic, progressively enhanced interfaces, shown with a manual activation tab example." />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/basic/#webpage",
+            "url": "https://vmitsaras.github.io/a11y-tabs-widget/examples/basic/",
+            "name": "Basic Accessible Tabs Example | A11y Tabs",
+            "description": "Start with semantic buttons and panels, then inspect the ARIA relationships, roving focus, keyboard navigation, and hidden panel state added at runtime.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/#webpage"
+            },
+            "about": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/basic/#software"
+            },
+            "mainEntity": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/basic/#software"
+            },
+            "author": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/basic/#author"
+            },
+            "image": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png#image"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png#image"
+            }
+          },
+          {
+            "@type": "SoftwareSourceCode",
+            "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/basic/#software",
+            "name": "a11y-tabs-widget",
+            "alternateName": "A11y Tabs",
+            "description": "Accessible tabs behavior for semantic, progressively enhanced tab interfaces.",
+            "codeRepository": "https://github.com/vmitsaras/a11y-tabs-widget",
+            "programmingLanguage": [
+              "TypeScript",
+              "JavaScript"
+            ],
+            "runtimePlatform": "Browser",
+            "version": "1.0.0",
+            "license": "MIT",
+            "keywords": [
+              "accessibility",
+              "a11y",
+              "tabs",
+              "aria",
+              "typescript"
+            ],
+            "featureList": [
+              "Semantic button tabs",
+              "Progressive enhancement",
+              "Roving tabindex keyboard navigation",
+              "ARIA tab and tabpanel relationships",
+              "Hidden inactive panel state"
+            ],
+            "author": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/basic/#author"
+            },
+            "creator": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/basic/#author"
+            },
+            "image": {
+              "@id": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png#image"
+            },
+            "targetProduct": {
+              "@type": "SoftwareApplication",
+              "name": "Modern web browsers",
+              "applicationCategory": "DeveloperApplication",
+              "operatingSystem": "Any",
+              "runtimePlatform": "Browser"
+            },
+            "sameAs": [
+              "https://github.com/vmitsaras/a11y-tabs-widget"
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://vmitsaras.github.io/a11y-tabs-widget/examples/basic/#author",
+            "name": "Vasileios Mitsaras",
+            "url": "https://github.com/vmitsaras/",
+            "sameAs": [
+              "https://github.com/vmitsaras/",
+              "https://linkedin.com/in/vasilis-mitsaras"
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png#image",
+            "url": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png",
+            "contentUrl": "https://vmitsaras.github.io/a11y-tabs-widget/social-preview.png",
+            "caption": "A11y Tabs: accessible tabs for semantic, progressively enhanced interfaces, shown with a manual activation tab example.",
+            "width": 1280,
+            "height": 640,
+            "encodingFormat": "image/png"
+          }
+        ]
+      }
+    </script>
+    <!-- seo:end -->
+<link rel="stylesheet" href="../../dist/styles.css" />
+    <link rel="stylesheet" href="../addon-demo.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to example</a>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="site-brand" href="../../index.html"><span>A11y/</span> Tabs</a>
+        <div class="site-nav__links">
+          <a href="../../index.html">Overview</a>
+          <a href="index.html" aria-current="page">Basic</a>
+          <a href="../../index.html#examples">Add-ons</a>
+          <a href="https://github.com/vmitsaras/a11y-tabs-widget">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+    <main id="main" class="demo-page">
+      <header class="demo-hero">
+        <p class="demo-hero__eyebrow">Start here</p>
+        <h1>A11y Tabs Basic Example</h1>
+        <p>
+          The HTML renders readable content before JavaScript runs. The plugin
+          adds ARIA tabs semantics, roving focus, keyboard navigation, and hidden
+          panel state.
+        </p>
+      </header>
+
+      <section class="demo-brief" aria-labelledby="scenario-title">
+        <h2 id="scenario-title">Scenario</h2>
+        <p>
+          A shopper compares product details, delivery information, and reviews
+          without losing access to the content when JavaScript is unavailable.
+        </p>
+      </section>
+
+      <section class="demo-instructions" aria-labelledby="try-title">
+        <h2 id="try-title">Try it</h2>
+        <ul>
+          <li>Press <kbd>Tab</kbd> to reach the selected tab.</li>
+          <li>Use Arrow keys, <kbd>Home</kbd>, and <kbd>End</kbd> to move focus.</li>
+          <li>Press <kbd>Enter</kbd> or <kbd>Space</kbd> to activate the focused tab.</li>
+          <li>Confirm that only the active panel is visible after initialization.</li>
+        </ul>
+      </section>
+
+      <section class="demo-stage" aria-labelledby="example-title">
+        <h2 id="example-title">Product information</h2>
+        <div class="a11y-tabs" data-a11y-tabs>
+          <div
+            class="a11y-tabs__list"
+            data-a11y-tabs-list
+            aria-label="Product information"
+          >
+            <button
+              class="a11y-tabs__tab"
+              type="button"
+              data-a11y-tabs-tab
+              data-a11y-tabs-panel-id="details"
+            >
+              Details
+            </button>
+            <button
+              class="a11y-tabs__tab"
+              type="button"
+              data-a11y-tabs-tab
+              data-a11y-tabs-panel-id="shipping"
+            >
+              Shipping
+            </button>
+            <button
+              class="a11y-tabs__tab"
+              type="button"
+              data-a11y-tabs-tab
+              data-a11y-tabs-panel-id="reviews"
+            >
+              Reviews
+            </button>
+          </div>
+
+          <section
+            class="a11y-tabs__panel"
+            id="details"
+            data-a11y-tabs-panel
+          >
+            <h3>Product Details</h3>
+            <p>
+              Built from durable materials with repairable components and clear
+              care instructions.
+            </p>
+          </section>
+
+          <section
+            class="a11y-tabs__panel"
+            id="shipping"
+            data-a11y-tabs-panel
+            hidden
+          >
+            <h3>Shipping</h3>
+            <p>
+              Standard delivery arrives in three to five business days. Expedited
+              delivery is available at checkout.
+            </p>
+          </section>
+
+          <section
+            class="a11y-tabs__panel"
+            id="reviews"
+            data-a11y-tabs-panel
+            hidden
+          >
+            <h3>Reviews</h3>
+            <p>
+              Customers mention the sturdy build, clear labeling, and simple
+              setup experience.
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <section class="demo-dev" aria-labelledby="setup-title">
+        <h2 id="setup-title">Developer setup</h2>
+        <p>Build the repository first, then serve or open this page. The local source loads from <code>dist</code>; the GitHub Pages mirror rewrites the same live import to <code>docs/assets</code>.</p>
+        <pre><code>npm install
+npm run build</code></pre>
+        <pre><code>import { createTabs } from "../../dist/index.js";
+
+const root = document.querySelector("[data-a11y-tabs]");
+
+if (root instanceof HTMLElement) {
+  createTabs(root);
+}</code></pre>
+        <p>
+          Keep the tab buttons and panels in the source HTML and give every panel
+          a stable <code>id</code>. <code>createTabs()</code> adds the tab roles,
+          relationships, selection state, and keyboard behavior at runtime; your
+          application remains responsible for meaningful labels and fallback content.
+        </p>
+      </section>
+
+      <section class="demo-notes" aria-labelledby="a11y-title">
+        <h2 id="a11y-title">Accessibility behavior</h2>
+        <ul>
+          <li>Panel content remains readable HTML before JavaScript initializes.</li>
+          <li>The runtime adds tab roles, selected state, panel relationships, and roving <code>tabindex</code>.</li>
+          <li>Real <code>button</code> controls preserve native activation behavior.</li>
+          <li>Final integrations still need testing with target browsers, zoom settings, and assistive technologies.</li>
+        </ul>
+      </section>
+
+      <section class="demo-notes" aria-labelledby="limits-title">
+        <h2 id="limits-title">Implementation limits</h2>
+        <ul>
+          <li>Provide one tablist and one panel for each tab inside the root.</li>
+          <li>Keep labels, headings, and fallback panel content meaningful.</li>
+          <li>This example uses manual activation and does not enable hash history or optional add-ons.</li>
+        </ul>
+      </section>
+
+      <section class="demo-dev demo-code" aria-labelledby="how-it-works-title">
+        <h2 id="how-it-works-title">How it works</h2>
+        <p>Semantic buttons identify their panels by id. The core initializer then adds the ARIA relationships, selection state, roving focus, and keyboard behavior.</p>
+        <h3>HTML</h3>
+        <pre><code>&lt;div class="a11y-tabs" data-a11y-tabs&gt;
+  &lt;div data-a11y-tabs-list aria-label="Product information"&gt;
+    &lt;button type="button" data-a11y-tabs-tab data-a11y-tabs-panel-id="snippet-details"&gt;
+      Details
+    &lt;/button&gt;
+    &lt;button type="button" data-a11y-tabs-tab data-a11y-tabs-panel-id="snippet-shipping"&gt;
+      Shipping
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;section id="snippet-details" data-a11y-tabs-panel&gt;...&lt;/section&gt;
+  &lt;section id="snippet-shipping" data-a11y-tabs-panel hidden&gt;...&lt;/section&gt;
+&lt;/div&gt;</code></pre>
+        <h3>JavaScript</h3>
+        <pre><code>import { createTabs } from "../../dist/index.js";
+
+const root = document.querySelector("[data-a11y-tabs]");
+
+if (root instanceof HTMLElement) {
+  createTabs(root);
+}</code></pre>
+      </section>
+
+    </main>
+    <footer class="demo-footer" data-demo-footer>
+      <div class="demo-footer__inner">
+        <div class="demo-footer__brand">
+          <p class="demo-footer__eyebrow">Accessibility plugin demo</p>
+          <p class="demo-footer__credit">
+            <span class="demo-footer__plugin">A11y Tabs</span>
+            <span class="demo-footer__separator" aria-hidden="true">&middot;</span>
+            Built by
+            <a class="demo-footer__link" href="https://github.com/vmitsaras/">Vasileios Mitsaras</a>
+            <span class="demo-footer__separator" aria-hidden="true">&middot;</span>
+            <a class="demo-footer__link" href="https://linkedin.com/in/vasilis-mitsaras">LinkedIn profile</a>
+          </p>
+          <p class="demo-footer__meta">
+            <span>a11y-tabs-widget</span>
+            <span class="demo-footer__separator" aria-hidden="true">&middot;</span>
+            <span>MIT License</span>
+          </p>
+        </div>
+
+        <nav class="demo-footer__nav" aria-label="Project links">
+          <ul class="demo-footer__links">
+            <li class="demo-footer__item">
+              <a class="demo-footer__link" href="https://github.com/vmitsaras/a11y-tabs-widget">GitHub repository</a>
+            </li>
+            <li class="demo-footer__item">
+              <a class="demo-footer__link" href="https://www.npmjs.com/package/a11y-tabs-widget">npm package</a>
+            </li>
+            <li class="demo-footer__item">
+              <a class="demo-footer__link" href="https://vmitsaras.github.io/a11y-tabs-widget/">Documentation</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module">
+      import { createTabs } from "../../dist/index.js";
+
+      const root = document.querySelector("[data-a11y-tabs]");
+
+      if (root instanceof HTMLElement) {
+        createTabs(root);
+      }
+    </script>
+  </body>
+</html>
