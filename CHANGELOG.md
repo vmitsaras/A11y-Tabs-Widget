@@ -4,6 +4,8 @@ This package uses Changesets for release notes.
 
 ## Unreleased
 
+## 1.0.0 - 2026-07-27
+
 ### Fixed
 
 - Align package installation and import documentation with
